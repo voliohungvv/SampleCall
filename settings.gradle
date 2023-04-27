@@ -24,3 +24,4 @@ rootProject.name = "B1_Project"
 include ':app'
 include ':common'
 include ':data'
+include ':callscreen'

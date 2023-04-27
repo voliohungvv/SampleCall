@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:visibility="gone"
+            android:id="@+id/recycler_view_bitcoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_bitcoin" />
 
         <Button
-            android:id="@+id/btnSetting"
+            android:id="@+id/button_click1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Setting" />
+            android:text="Click1"/>
 
         <Button
-            android:id="@+id/btnPolicy"
+            android:id="@+id/button_click2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Policy" />
+            android:text="Click2"/>
+        <Button
+            android:id="@+id/button_click3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click3"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

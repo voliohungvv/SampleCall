@@ -4,6 +4,7 @@ import androidx.fragment.app.viewModels
 import com.volio.vn.b1_project.R
 import com.volio.vn.b1_project.base.BaseFragment
 import com.volio.vn.b1_project.databinding.FragmentSplashBinding
+import com.volio.vn.common.utils.delay
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,6 +20,9 @@ class SplashFragment : BaseFragment<FragmentSplashBinding, SplashNavigation>() {
     }
 
     override fun onViewReady() {
-        viewModel.test()
+        //viewModel.getBitcoinList()
+        delay(2000) {
+            navigation.gotoHome()
+        }
     }
 }

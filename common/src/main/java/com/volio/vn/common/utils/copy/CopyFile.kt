@@ -75,7 +75,7 @@ object CopyFile {
         }
     }
 
-    private fun copyFile(
+     fun copyFile(
         fileInput: File, fileOutput: File, onCallback: (file: File?) -> Unit = {}
     ) {
         var bytesCopied: Long = 0
